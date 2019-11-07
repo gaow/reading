@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2019 on Gao&#39;s reading notes</title>
+    <link>https://gaow.github.io/reading/2019/</link>
+    <description>Recent content in 2019 on Gao&#39;s reading notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://gaow.github.io/reading/2019/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Leveraging Gene Co-expression Patterns to Infer Trait-Relevant Tissues in Genome-wide Association Studies</title>
+      <link>https://gaow.github.io/reading/2019/shang-l-zhou-x-2019/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gaow.github.io/reading/2019/shang-l-zhou-x-2019/</guid>
+      <description>DOI https://doi.org/10.1101/705129
+Problem  Tissue specific gene-level annotation / information integrated to GWAS is of interest, eg RolyPoly.
+ But previous studies ignore gene coregulations and levels of network activities in genes.
+  Method CoCoNet (for composite likelihood co-expression)
+ Y = GWAS gene-level effect size (via local heritability), X = gene expression adjacency matrix, tissue specific using PANDA or some existing tools, is a binary matrix for presence of connectivity; test if tissue is relevant to disease and cell types</description>
+    </item>
+    
+  </channel>
+</rss>
