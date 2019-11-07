@@ -4,6 +4,10 @@
 
 https://doi.org/10.1101/705129
 
+## Journal
+
+biorxiv
+
 ## Problem
 - Tissue specific gene-level annotation / information integrated to GWAS is of interest, eg RolyPoly.
 - But previous studies ignore gene coregulations and levels of network activities in genes.
@@ -28,4 +32,4 @@ CoCoNet (for composite likelihood co-expression)
 
 ## KW
 
-Xiang Zhou, coexpression, tissue specific
+Xiang Zhou, co-expression, tissue specific

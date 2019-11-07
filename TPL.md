@@ -2,6 +2,10 @@
 
 ## DOI
 
+## Journal
+
+biorxiv
+
 ## Problem
 
 ## Method

@@ -8,10 +8,4 @@ Hopefully a mechanism like this can help making it fun and easy, and eventually 
 Contents in this repo is intended for my self-consumption and book-keeping.
 It is by no means polished or even correct yet I'm not ashamed of not keeping it my way.
 
-To compile and publish as a website, run:
-
-```
-./release.sos
-```
-
-and push to github.
+To compile and publish as a website, run `./release.sos` in command shell, and push changes to github.

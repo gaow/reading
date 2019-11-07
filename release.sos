@@ -32,7 +32,7 @@ bash: expand = '${ }'
   """ >> website/themes/hugo-theme-learn/static/css/theme.css
   sed -i 's/"Work Sans"/"PT Sans"/g' website/themes/hugo-theme-learn/static/css/theme.css
   echo -e '''
-  <p><a href="http://tigerwang.org/profile">Gao Wang</a> &copy; 2019+</p>
+  <p><a href="http://tigerwang.org">Gao Wang</a> &copy; 2019+ | For my personal use.</p>
   ''' > website/themes/hugo-theme-learn/layouts/partials/menu-footer.html
   echo -e '''
   <a id="loga" href="http://github.com/gaow/reading">
@@ -42,6 +42,41 @@ bash: expand = '${ }'
   <svg>
   </a>
   ''' >  website/themes/hugo-theme-learn/layouts/partials/logo.html
+  echo -e '''
+  {{ if ne .Site.Params.mathjax "" }}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/{{.Site.Params.mathjax}}/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script>
+  MathJax.Hub.Config({
+     extensions: ["tex2jax.js"],
+     jax: ["input/TeX", "output/HTML-CSS"],
+     tex2jax: {
+         inlineMath: [ ["$","$"] ],
+         displayMath: [ ["$$","$$"] ],
+         processEscapes: true
+     },
+     "HTML-CSS": {
+         preferredFont: "TeX",
+         availableFonts: ["TeX"],
+         styles: {
+             scale: 110,
+             ".MathJax_Display": {
+                 "font-size": "110%",
+             }
+         }
+     }
+  });
+  </script>
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += " has-jax";
+
+    }
+  });
+  </script>
+  {{ end }} 
+  ''' >> website/themes/hugo-theme-learn/layouts/partials/custom-header.html
 download: dest_dir = 'website/themes/hugo-theme-learn/static/fonts', decompress=True
   https://google-webfonts-helper.herokuapp.com/api/fonts/pt-sans?download=zip&subsets=latin&variants=regular
 
@@ -65,7 +100,8 @@ def get_data(files):
         data[f]['year'] = info[0][:4]
         data[f]['name'] = f"{info[2]} {info[1]}. + {info[4]} {info[3]}."
         data[f]['html_name'] = f"{info[2]}-{info[1]}-{info[4]}-{info[3]}-{info[0]}".lower()
-        data[f]['content'] = '\n'.join(lines[1:])
+        lines[0] = f"**{lines[0].strip('#').strip()}**"
+        data[f]['content'] = '\n'.join(lines)
     return OrderedDict(sorted(data.items(), key = lambda i: i[1]['name'].lower()))
 
 data = get_data(glob.glob(f'{data_dir}/*.md'))
@@ -81,9 +117,8 @@ for k in data:
        toc[category] = '\n## {}\n\n----\n\n'.format(category)
     if category not in contents:
        contents[category] = OrderedDict() 
-    desc_text = ', ' + data[k]['full_name']
-    toc[category] += '{}. [{}]({}){}\n'.format(idx, data[k]['name'], data[k]['html_name'], desc_text)
-    contents[category][(data[k]['full_name'], data[k]['html_name'])] = data[k]['content']
+    toc[category] += '{}. [{} ({})]({}), {}\n'.format(idx, data[k]['name'], data[k]['year'], data[k]['html_name'], data[k]['full_name'])
+    contents[category][(data[k]['name'], data[k]['html_name'])] = data[k]['content']
     idx += 1
 
 idx = 4

@@ -15,4 +15,9 @@ home = [ "HTML", "RSS", "JSON"]
   # Shows a checkmark for visited pages on the menu
   showVisitedLinks = true
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
-  themeVariant = ""
+  themeVariant = "green"
+  # cdnjs hosted version; empty string to disable mathjax
+  mathjax = "2.7.2" 
+
+[blackfriday]
+  latexDashes = true
