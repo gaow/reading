@@ -4,21 +4,21 @@
 	"title": "About",
 	"tags": [],
 	"description": "",
-	"content": " Reading notes A repo for reading notes since late 2019. I have attempted it various ways in the past digitalizing the notes-taking process but they all failed. Keeping typed and organized notes does require preservance and patience. Hopefully a mechanism like this can help making it fun and easy, and eventually work out!\nContents in this repo is intended for my self-consumption and book-keeping. It is by no means polished or even correct yet I\u0026rsquo;m not ashamed of not keeping it my way.\nTo compile and publish as a website, run:\n./release.sos  and push to github.\n"
+	"content": " Reading notes A repo for reading notes since late 2019. I have attempted it various ways in the past digitalizing the notes-taking process but they all failed. Keeping typed and organized notes does require preservance and patience. Hopefully a mechanism like this can help making it fun and easy, and eventually work out!\nContents in this repo is intended for my self-consumption and book-keeping. It is by no means polished or even correct yet I\u0026rsquo;m not ashamed of not keeping it my way.\nTo compile and publish as a website, run ./release.sos in command shell, and push changes to github.\n"
 },
 {
 	"uri": "https://gaow.github.io/reading/2019/shang-l-zhou-x-2019/",
-	"title": "Leveraging Gene Co-expression Patterns to Infer Trait-Relevant Tissues in Genome-wide Association Studies",
+	"title": "Shang L. + Zhou X.",
 	"tags": [],
 	"description": "",
-	"content": " DOI https://doi.org/10.1101/705129\nProblem  Tissue specific gene-level annotation / information integrated to GWAS is of interest, eg RolyPoly.\n But previous studies ignore gene coregulations and levels of network activities in genes.\n  Method CoCoNet (for composite likelihood co-expression)\n Y = GWAS gene-level effect size (via local heritability), X = gene expression adjacency matrix, tissue specific using PANDA or some existing tools, is a binary matrix for presence of connectivity; test if tissue is relevant to disease and cell types\n Y is generated from A: $MVN(\\mu, \\Sigma(A))$ \u0026mdash; where for each pair of $\\sigma_k * A^(k)$ is variance times correlatoin. $k$ denotes \u0026ldquo;power\u0026rdquo; of connectivity.\n Composite likelihood covariance regression \u0026mdash; consider a pair at a time to overcome the computational challenging fitting the MLE for model above.\n  Result  Applied to neurology and immunology GWAS\n Using GTEx data\n Validate with RISmed identified trait-tissue pairs in pubmed title and abstracts.\n  Comment  Other types of network, eg, protein, can also help?  KW Xiang Zhou, coexpression, tissue specific\n"
+	"content": " Leveraging Gene Co-expression Patterns to Infer Trait-Relevant Tissues in Genome-wide Association Studies\nDOI https://doi.org/10.1101/705129\nJournal biorxiv\nProblem  Tissue specific gene-level annotation / information integrated to GWAS is of interest, eg RolyPoly.\n But previous studies ignore gene coregulations and levels of network activities in genes.\n  Method CoCoNet (for composite likelihood co-expression)\n Y = GWAS gene-level effect size (via local heritability), X = gene expression adjacency matrix, tissue specific using PANDA or some existing tools, is a binary matrix for presence of connectivity; test if tissue is relevant to disease and cell types\n Y is generated from A: $MVN(\\mu, \\Sigma(A))$ \u0026mdash; where for each pair of $\\sigma_k * A^(k)$ is variance times correlatoin. $k$ denotes \u0026ldquo;power\u0026rdquo; of connectivity.\n Composite likelihood covariance regression \u0026mdash; consider a pair at a time to overcome the computational challenging fitting the MLE for model above.\n  Result  Applied to neurology and immunology GWAS\n Using GTEx data\n Validate with RISmed identified trait-tissue pairs in pubmed title and abstracts.\n  Comment  Other types of network, eg, protein, can also help?  KW Xiang Zhou, coexpression, tissue specific\n"
 },
 {
 	"uri": "https://gaow.github.io/reading/2019/",
 	"title": "2019",
 	"tags": [],
 	"description": "",
-	"content": " 2019  Shang L. + Zhou X., Leveraging Gene Co-expression Patterns to Infer Trait-Relevant Tissues in Genome-wide Association Studies  "
+	"content": " 2019  Shang L. + Zhou X. (2019), Leveraging Gene Co-expression Patterns to Infer Trait-Relevant Tissues in Genome-wide Association Studies  "
 },
 {
 	"uri": "https://gaow.github.io/reading/categories/",
