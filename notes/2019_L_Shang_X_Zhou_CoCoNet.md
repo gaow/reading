@@ -17,7 +17,7 @@ biorxiv
 CoCoNet (for composite likelihood co-expression)
 
 - Y = GWAS gene-level effect size (via local heritability), X = gene expression adjacency matrix, tissue specific using PANDA or some existing tools, is a binary matrix for presence of connectivity; **test if tissue is relevant to disease and cell types**
-- Y is generated from A: $MVN(\mu, \Sigma(A))$ --- where for each pair of $\sigma_k * A^(k)$ is variance times correlatoin. $k$ denotes "power" of connectivity.
+- Y is generated from A: $MVN(\mu, \Sigma(A))$ --- where for each pair of $\sigma_k * A^{(k)}$ is variance times correlatoin. $k$ denotes "power" of connectivity.
 - Composite likelihood covariance regression --- consider a pair at a time to overcome the computational challenging fitting the MLE for model above.
 
 ## Result

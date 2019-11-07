@@ -32,7 +32,7 @@ bash: expand = '${ }'
   """ >> website/themes/hugo-theme-learn/static/css/theme.css
   sed -i 's/"Work Sans"/"PT Sans"/g' website/themes/hugo-theme-learn/static/css/theme.css
   echo -e '''
-  <p><a href="http://tigerwang.org">Gao Wang</a> &copy; 2019+ | For my personal use.</p>
+  <p><a href="http://tigerwang.org">Gao Wang</a> &copy; 2019+ For my personal use.</p>
   ''' > website/themes/hugo-theme-learn/layouts/partials/menu-footer.html
   echo -e '''
   <a id="loga" href="http://github.com/gaow/reading">
