@@ -1,6 +1,6 @@
 languageCode = "en-us"
-title = "Genetic Analysis Software | The Rockefeller List"
-baseURL = "https://gaow.github.io/genetic-analysis-software/"
+title = "Gao's reading notes"
+baseURL = "https://gaow.github.io/reading/"
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
 
@@ -11,8 +11,8 @@ home = [ "HTML", "RSS", "JSON"]
   # Author of the site, will be used in meta information
   author = "Gao Wang"
   # Description of the site, will be used in meta information
-  description = "Statistical Genetics Analysis Software"
+  description = "Reading list on genetics and computational biology"
   # Shows a checkmark for visited pages on the menu
   showVisitedLinks = true
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
-  themeVariant = "green"
+  themeVariant = ""

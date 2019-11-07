@@ -55,6 +55,7 @@ def get_data(files):
         if os.path.basename(f) == 'README.md':
            continue
         lines = open(f).readlines()
+        f = os.path.basename(f)
         first_line = lines[0]
         if not first_line.startswith('#'):
             raise ValueError(f'The first line of document "{f}" must start with "#" followed by paper/book title')
@@ -81,8 +82,8 @@ for k in data:
     if category not in contents:
        contents[category] = OrderedDict() 
     desc_text = ', ' + data[k]['full_name']
-    toc[category] += '{}. [{}]({}){}\n'.format(idx, data[k]['name'], data['k']['html_name'], desc_text)
-    contents[category][(lines[0].strip("#").strip(), data[k]['html_name'])] = data[k]['content']
+    toc[category] += '{}. [{}]({}){}\n'.format(idx, data[k]['name'], data[k]['html_name'], desc_text)
+    contents[category][(data[k]['full_name'], data[k]['html_name'])] = data[k]['content']
     idx += 1
 
 idx = 4
@@ -112,7 +113,7 @@ bash:
   rsync -auz public/* ../docs/
   cd ../docs
   git add .
-  git commit -m update
+  git commit -m "(bot) update HTML"
   git push
 
 [clean]

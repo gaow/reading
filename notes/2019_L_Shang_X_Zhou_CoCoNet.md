@@ -16,11 +16,15 @@ CoCoNet (for composite likelihood co-expression)
 - Y is generated from A: $MVN(\mu, \Sigma(A))$ --- where for each pair of $\sigma_k * A^(k)$ is variance times correlatoin. $k$ denotes "power" of connectivity.
 - Composite likelihood covariance regression --- consider a pair at a time to overcome the computational challenging fitting the MLE for model above.
 
-## Results
+## Result
 
 - Applied to neurology and immunology GWAS
 - Using GTEx data
 - Validate with [RISmed](https://cran.r-project.org/web/packages/RISmed/index.html) identified trait-tissue pairs in pubmed title and abstracts.
+
+## Comment
+
+- Other types of network, eg, protein, can also help?
 
 ## KW
 

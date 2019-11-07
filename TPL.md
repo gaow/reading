@@ -2,7 +2,6 @@
 
 ## DOI
 
-
 ## Problem
 
 ## Method
