@@ -121,7 +121,7 @@ for k in data:
        toc[category] = '\n## {}\n\n----\n\n'.format(category)
     if category not in contents:
        contents[category] = OrderedDict() 
-    toc[category] += '{}. [{}]({}) ({}), {}\n'.format(idx, data[k]['name'], data[k]['html_name'], data[k]['year'], data[k]['full_name'])
+    toc[category] += '{}. [{}]({}) ({}), {}.\n'.format(idx, data[k]['name'], data[k]['html_name'], data[k]['year'], data[k]['full_name'])
     data[k]['name'] = f"{idx}. {data[k]['name']}"
     contents[category][(data[k]['name'], data[k]['html_name'])] = data[k]['content']
     idx += 1
