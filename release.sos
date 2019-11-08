@@ -98,8 +98,12 @@ def get_data(files):
         data[f]['full_name'] = first_line[1:].strip()
         info = f.split("_")
         data[f]['year'] = info[0]
-        data[f]['name'] = f"{info[2]} {info[1]}. + {info[4]} {info[3]}."
-        data[f]['html_name'] = f"{info[2]}-{info[1]}-{info[4]}-{info[3]}-{info[0]}".lower()
+        try:
+          data[f]['name'] = f"{info[2]} {info[1]}. + {info[4]} {info[3]}."
+          data[f]['html_name'] = f"{info[2]}-{info[1]}-{info[4]}-{info[3]}-{info[0]}".lower()
+        except IndexError:
+          data[f]['name'] = f"{info[2]} {info[1]}."
+          data[f]['html_name'] = f"{info[2]}-{info[1]}-{info[0]}".lower()
         lines[0] = f"**{lines[0].strip('#').strip()}**"
         data[f]['content'] = '\n'.join(lines)
     return OrderedDict(sorted(data.items(), key = lambda i: i[1]['name'].lower()))
