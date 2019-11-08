@@ -1,5 +1,12 @@
 [
 {
+	"uri": "https://gaow.github.io/reading/2014/pickrell-j-2014/",
+	"title": "1. Pickrell J.",
+	"tags": [],
+	"description": "",
+	"content": " Joint Analysis of Functional Genomic Data and Genome-wide Association Studies of 18 Human Traits\nDOI https://dx.doi.org/10.1016%2Fj.ajhg.2014.03.004\nJournal AJHG\nProblem Incorperating multiple types of annotations to re-discover GWAS signals.\nMethod Related to Veyrieras et al (2008) (Stephens lab), but\n Formulating with Wakefields\u0026rsquo;s approximate BF calculations\n Adding in a shrinkage penalty to the logistic link for annotations and use a 10-fold CV for it\n And also additionally use some heuristic rules to select the model  Posterior is given as Maller et al (2012)\n  For data analysis\n Use GWAS summary data and ImpG (Pasaniuc B et al) to impute summary stats  Result More interesting to read the application of fGWAS to 42 traits at https://dx.doi.org/10.1038%2Fng.3570\nComment  As with many similar approaches (eg Wen 2016 AoAS) the selected annotations are not identifiable and interpretable themselves when they are highly correlated.\n The author indeed discussed this issue in a section \u0026ldquo;Conditional analysis\u0026rdquo;   KW Joe Pickrell, BVSR, annotation\n"
+},
+{
 	"uri": "https://gaow.github.io/reading/2019/shang-l-zhou-x-2019/",
 	"title": "1. Shang L. + Zhou X.",
 	"tags": [],
@@ -12,6 +19,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Reading notes A repo for reading notes since late 2019.\nI have attempted various ways in the past digitalizing notes-taking process in reading but they never worked out. Keeping typed and organized notes requires preservance and patience that I don\u0026rsquo;t have \u0026hellip; Hopefully a mechanism like this can help making it fun and easy, and eventually solve my problem!\nContents in this repo is intended for my self-consumption and book-keeping. It is by no means polished or even correct yet I\u0026rsquo;m not ashamed of keeping it my way as is.\nTo compile and publish as a website, run ./release.sos in command shell, and push changes to github.\n"
+},
+{
+	"uri": "https://gaow.github.io/reading/2014/",
+	"title": "2014",
+	"tags": [],
+	"description": "",
+	"content": " 2014  Pickrell J. (2014), Joint Analysis of Functional Genomic Data and Genome-wide Association Studies of 18 Human Traits  "
 },
 {
 	"uri": "https://gaow.github.io/reading/2019/",
