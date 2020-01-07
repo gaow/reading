@@ -2,7 +2,7 @@
 
 ## DOI
 
-10.1002/9780470015902.a0022500.pub2
+`10.1002/9780470015902.a0022500.pub2`
 
 ## Journal
 
@@ -50,6 +50,8 @@ Helps to understand what it is meant by:
 - test for association in the presence of linkage (ie, lack of independence btw transmissions to different children in the same family)
 
 ## KW
+
+Family-based association, FBAT, TDT
 
 ## Further reading
 
