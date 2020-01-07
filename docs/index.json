@@ -1,5 +1,12 @@
 [
 {
+	"uri": "https://gaow.github.io/reading/2018/laird-n-lange-c-2018/",
+	"title": "1. Laird N. + Lange C.",
+	"tags": [],
+	"description": "",
+	"content": " FBAT\nDOI 10.1002\u0026frasl;9780470015902.a0022500.pub2\nJournal eLS. John Wiley \u0026amp; Sons\nProblem A review on TDT and FBAT. Proper family based design can help with the problem of genetic confounding.\nMethod FBAT overview FBAT is a generalization of TDT suitable for:\n other family designs \u0026ndash; use transmission to unaffected offspring (not the case-only TDT), missing founders, multigenerational families\n other modes of inheritance (not just additive)\n though Schaid and Sommer (1996) extends TDT to model dominate and recessive inheritance  dichotomous, measured and time-to-onset phenotypes\n haplotypes of tightly linked markers\n  FBAT method outline writing the likelihood of $f(G|Y,P,\\alpha,\\beta)$ where $G$ is offspring genotype, $Y$ is offspring phenotype, $P$ is parental genotype, $\\beta$ is effect size, $\\alpha$ is nuisance parameters such as $\\mu=E(Y)$ under the null (covariates are taken into consideration here).\n under the null, the test distribution is simply $f(G|P)$ not depending on how $Y$ is specified.\n under the alternative the score test depends on choice of $f(Y|G,\\alpha,\\beta)$.\n A form of score test is given as a covariance between genotype and phenotype, $U=\\sum_{offspring}(X-E(X|P))(Y-\\mu)$ where $X$ is genotype coding under various models of inheritance.\n TDT is a special case of FBAT.\n  The paper went on with formal arguments on why such test is robust to population structure.\nGDT test and comparison with FBAT GDT requires knowledge of underlying allele frequency. The score are similar in analytic form but the variance of the score is different. GDT has to assume HWE within each family, ie, no admixture or inbreeding.\nResult Comment Helps to understand what it is meant by:\n linkage but no association\n association but no linkage\n test for association in the presence of linkage (ie, lack of independence btw transmissions to different children in the same family)\n  KW Further reading  GDT, Chen et al 2009\n LMM methods (this paper seems to touch some and describe their relationship but it is not very clear if the authors meant it by LMM)\n  "
+},
+{
 	"uri": "https://gaow.github.io/reading/2014/pickrell-j-2014/",
 	"title": "1. Pickrell J.",
 	"tags": [],
@@ -21,18 +28,25 @@
 	"content": " Reading notes A repo for reading notes since late 2019.\nI have attempted various ways in the past digitalizing notes-taking process in reading but they never worked out. Keeping typed and organized notes requires preservance and patience that I don\u0026rsquo;t have \u0026hellip; Hopefully a mechanism like this can help making it fun and easy, and eventually solve my problem!\nContents in this repo is intended for my self-consumption and book-keeping. It is by no means polished or even correct yet I\u0026rsquo;m not ashamed of keeping it my way as is.\nTo compile and publish as a website, run ./release.sos in command shell, and push changes to github.\n"
 },
 {
+	"uri": "https://gaow.github.io/reading/2018/",
+	"title": "2018",
+	"tags": [],
+	"description": "",
+	"content": " 2018  Laird N. + Lange C. (2018), FBAT.  "
+},
+{
 	"uri": "https://gaow.github.io/reading/2014/",
 	"title": "2014",
 	"tags": [],
 	"description": "",
-	"content": " 2014  Pickrell J. (2014), Joint Analysis of Functional Genomic Data and Genome-wide Association Studies of 18 Human Traits  "
+	"content": " 2014  Pickrell J. (2014), Joint Analysis of Functional Genomic Data and Genome-wide Association Studies of 18 Human Traits.  "
 },
 {
 	"uri": "https://gaow.github.io/reading/2019/",
 	"title": "2019",
 	"tags": [],
 	"description": "",
-	"content": " 2019  Shang L. + Zhou X. (2019), Leveraging Gene Co-expression Patterns to Infer Trait-Relevant Tissues in Genome-wide Association Studies  "
+	"content": " 2019  Shang L. + Zhou X. (2019), Leveraging Gene Co-expression Patterns to Infer Trait-Relevant Tissues in Genome-wide Association Studies.  "
 },
 {
 	"uri": "https://gaow.github.io/reading/categories/",
