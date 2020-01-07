@@ -28,6 +28,7 @@ FBAT is a generalization of TDT suitable for:
 
 writing the likelihood of $f(G|Y,P,\alpha,\beta)$ where $G$ is offspring genotype, $Y$ is offspring phenotype, $P$ is parental genotype, $\beta$ is effect size, $\alpha$ is nuisance parameters such as $\mu=E(Y)$ under the null (covariates are taken into consideration here).
 
+- genotype is random, phenotype is fixed.
 - under the null, the test distribution is simply $f(G|P)$ not depending on how $Y$ is specified.
 - under the alternative the score test depends on choice of $f(Y|G,\alpha,\beta)$.
 - A form of score test is given as a covariance between genotype and phenotype, $U=\sum_{offspring}(X-E(X|P))(Y-\mu)$ where $X$ is genotype coding under various models of inheritance.
